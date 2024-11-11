@@ -1,0 +1,24 @@
+accordion-group::ng-deep .btn-link{
+    color:white;
+}
+accordion-group::ng-deep .card-header {
+   background-color: #007bff;
+}
+/* styles.css */
+.btn-link {
+    color: white;
+}
+
+.arrow {
+    width: 10.95px;
+}
+
+.arrow-up {
+    color: rgb(244, 244, 246);
+}
+
+.arrow-down {
+    color: #eceef1;
+    font-size: 20px; /* Adjust size as needed */
+  margin-right: 5px; 
+}

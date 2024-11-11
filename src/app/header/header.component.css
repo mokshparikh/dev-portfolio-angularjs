@@ -1,0 +1,31 @@
+.jumbotron {
+    position: relative;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.social-link img {
+    margin-right: 8px;
+}
+.header {
+    background-image: url('../../assets/header\ background.png');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+}

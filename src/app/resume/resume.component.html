@@ -1,0 +1,121 @@
+<div class="container text-center">
+    <button (click)="downloadFile()" class="btn btn-primary mb-5 shadow border">Download Resume</button>
+   <div class="pb-2">
+       <accordion [isAnimated]="true" class="shadow">
+         <accordion-group [(isOpen)]="isExperienceOpen">
+                   <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                      <div style="visibility:hidden;">></div>
+                      <div class="btn-link"> Experience</div>
+                           <div class="arrow">
+                              <div *ngIf="!isExperienceOpen" class="arrow-down">></div>
+                                <div *ngIf="isExperienceOpen" class="arrow-up">v</div>
+                             </div>
+                 </button>
+              <div style="text-align:left;">
+                 <h2 class="mb-0">Software Engineering</h2>
+                 <h3 class="text-primary">Intern TatvaSoft</h3>
+                 <ul>
+                     <li>"I worked on a project where we utilized Angular for the frontend, .NET for the backend, and PostgreSQL for the database. In this project, Angular was used to develop the user interface, while .NET was employed to handle backend logic and create APIs. PostgreSQL served as our database management system.</li><br>
+                     <li>I was responsible for bridging the gap between the frontend and backend, ensuring smooth data flow and seamless integration with the database. Throughout the project, I encountered various challenges, such as optimizing database queries and ensuring data consistency across the application.</li><br>
+                     <li>Despite the challenges, our team successfully delivered a robust solution that met the requirements of the virtual community support platform. This experience not only enhanced my technical skills in Angular, .NET, and PostgreSQL but also provided valuable insights into software development methodologies and teamwork."</li>
+                 </ul>
+              </div>
+         </accordion-group>
+   
+         <accordion-group [(isOpen)]="isEducationOpen">
+             <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                      <div style="visibility:hidden;">></div>
+                      <div class="btn-link">Education</div>
+                           <div class="arrow">
+                              <div *ngIf="!isEducationOpen" class="arrow-down">></div>
+                                <div *ngIf="isEducationOpen" class="arrow-up">v</div>
+                             </div>
+                 </button>
+              <div style="text-align:left;">
+                 <h2 class="mb-0">Bachelor of Technology (B.Tech)</h2>
+                 <h3 class="text-primary"><a href="https://www.gcet.ac.in/" target="_blank">GCET</a></h3>
+                 <ul>
+                    <li>Bachelor of Technology (B.Tech) in Computer Science Engineering with Specialization in Internet of Things (IoT) From G H Patel College Of Engineering And Technology</li>
+                 </ul>
+             </div>
+         </accordion-group>
+   
+         <accordion-group [(isOpen)]="isCertificationOpen">
+            <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                      <div style="visibility:hidden;">></div>
+                      <div class="btn-link">Certification</div>
+                           <div class="arrow">
+                              <div *ngIf="!isCertificationOpen" class="arrow-down">></div>
+                                <div *ngIf="isCertificationOpen" class="arrow-up">v</div>
+                             </div>
+                 </button>
+                <div style="text-align:left;">
+                    <h3><a href="https://coursera.org/verify/JYN3F68HRCAP" target="_blank">C++ For C Programmers, Part A</a></h3>
+                    <ul>
+                        <li>Obtained In October 14, 2022</li>
+                        <li>Grade Achieved: 92.91%</li>
+                    </ul>
+                    <h3><a href="https://coursera.org/verif" target="_blank">Python Data Structures</a></h3>
+                    <ul>
+                        <li>Obtained In August 30, 2022</li>
+                        <li>Grade Achieved: 97.60%</li>
+                    </ul>
+                </div>
+            </accordion-group>
+
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility:hidden;">></div>
+                    <div class="btn-link">Skills</div>
+                    <div class="arrow">
+                        <div *ngIf="!isSkillsOpen" class="arrow-down">></div>
+                        <div *ngIf="isSkillsOpen" class="arrow-up">v</div>
+                    </div>
+                </button>
+               <div class="row" style="text-align:left;">
+                  <div class="col">
+                     <h4>Programming Languages</h4>
+                     <ul>
+                         <li>C</li>
+                         <li>C++</li>
+                         <li>Python</li>
+                         <li>JavaScript</li>
+                     </ul>
+                 </div>
+                  <div class="col">
+                     <h4>Web Development</h4>
+                     <ul>
+                         <li>Html</li>
+                         <li>Css</li>
+                         <li>JavaScript</li>
+                     </ul>
+                 </div>
+                 <div class="col">
+                     <h4>Frameworks</h4>
+                     <ul>
+                         <li>Angular Js</li>
+                         <li>Node Js</li>
+                         <li>Express Js</li>
+                     </ul>
+                </div>
+                <div class="col">
+                     <h4>Database</h4>
+                     <ul>
+                         <li>PostgreSQL</li>
+                         <li>SQL</li>
+                         <li>MongoDB</li>
+                     </ul>
+                </div>
+                <div class="col">
+                     <h4>Other Skills</h4>
+                     <ul>
+                        <li>Git</li>
+                         <li>GitHub</li>
+                        <li>AWS</li>
+                     </ul>
+                </div>
+            </div>
+         </accordion-group>
+       </accordion>
+  </div>
+</div>
